@@ -2,7 +2,6 @@ from re import findall
 from math import inf
 from random import choice
 
-
 class Player:
     def __init__(self, name: str, char: str = None):
         if char is None:
@@ -13,6 +12,7 @@ class Player:
     def __str__(self):
         return self.name
 
+    # players are equal if their names are
     def __eq__(self, other):
         if isinstance(other, Player):
             return self.name == other.name
