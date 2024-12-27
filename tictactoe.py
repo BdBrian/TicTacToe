@@ -51,7 +51,7 @@ class Board:
         self.p2 = p2
         self.turn = self.p1 # after making a move, turn immediately switches to other player.
 
-    def move(self, move: Item):
+    def move(self, move: Item): # moving includes switching turn
         self.move_history.append(move)
         self.turn = self.p2 if self.turn == self.p1 else self.p1
 
