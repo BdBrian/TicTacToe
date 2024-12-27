@@ -12,7 +12,7 @@ class Player:
     def __str__(self):
         return self.name
 
-    # players are equal if their names are
+    # players are equal if their names are equal
     def __eq__(self, other):
         if isinstance(other, Player):
             return self.name == other.name
